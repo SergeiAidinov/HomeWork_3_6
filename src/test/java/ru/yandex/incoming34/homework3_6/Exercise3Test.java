@@ -35,12 +35,11 @@ public class Exercise3Test {
         assertFalse(exercise3.checkArray(array));
     }
 
-    
     @Test
     public void testCheckArray4() {
         Exercise3 exercise3 = new Exercise3();
-        int[] array = {1, 4, 4};        
-        assert(exercise3.checkArray(array));
+        int[] array = {1, 4, 4};
+        assert (exercise3.checkArray(array));
     }
 
 }

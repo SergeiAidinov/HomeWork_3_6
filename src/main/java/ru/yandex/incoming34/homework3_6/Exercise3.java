@@ -10,34 +10,34 @@ package ru.yandex.incoming34.homework3_6;
  * @author sergei
  */
 public class Exercise3 {
-    
+
     public boolean checkArray(int[] array) {
         int qtyOnes = 0;
         int qtyFours = 0;
-        
-        for (int i = 0; i < array.length; i++){
-            switch(array[i]){
+
+        for (int i = 0; i < array.length; i++) {
+            switch (array[i]) {
                 case 1: {
                     qtyOnes++;
                     break;
-                }                
+                }
                 case 4: {
                     qtyFours++;
                     break;
                 }
-                   default: {
-                try {
-                    throw  new RedundantFigure();
-                } catch (RedundantFigure ex) {
-                    System.out.println(ex);
+                default: {
+                    try {
+                        throw new RedundantFigure();
+                    } catch (RedundantFigure ex) {
+                        System.out.println(ex);
+                    }
                 }
-                   }
-                    
+
             }
         }
-        
+
         return (qtyOnes == qtyFours);
-        
+
     }
-    
+
 }
